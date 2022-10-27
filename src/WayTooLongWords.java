@@ -23,12 +23,9 @@ public class WayTooLongWords {
             return testCase;
         }
         StringBuilder out = new StringBuilder();
-        char firstLetter = testCase.charAt(0);
-        char lastLetter = testCase.charAt(testCase.length() - 1);
-        out.append(firstLetter);
-        int numBetween = testCase.length() - 2;
-        out.append(numBetween);
-        out.append(lastLetter);
+        out.append(testCase.charAt(0));
+        out.append(testCase.length() - 2);
+        out.append(testCase.charAt(testCase.length() - 1));
         return out.toString();
     }
 }
