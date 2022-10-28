@@ -1,2 +1,14 @@
-package PACKAGE_NAME;public class Team {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Team {
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        in.close();
+    }
+
+    public boolean solve() {
+        return false;
+    }
 }
