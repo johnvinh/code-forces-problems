@@ -10,6 +10,23 @@ public class Football {
     }
 
     private static String solve(String input) {
-        return "YES";
+        int counter = 1;
+        char prev = 'A';
+        for (int i = 0; i < input.length(); i++) {
+            if (counter >= 7) {
+                return "YES";
+            }
+            char ch = input.charAt(i);
+            if (ch == prev) {
+                counter += 1;
+            } else {
+                counter = 1;
+            }
+            prev = ch;
+        }
+        if (counter >= 7) {
+            return "YES";
+        }
+        return "NO";
     }
 }
