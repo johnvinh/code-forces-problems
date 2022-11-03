@@ -5,10 +5,11 @@ import java.io.InputStreamReader;
 public class Football {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(solve(in.readLine()));
         in.close();
     }
 
-    public String solve() {
+    private static String solve(String input) {
         return "YES";
     }
 }
