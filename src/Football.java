@@ -7,4 +7,8 @@ public class Football {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         in.close();
     }
+
+    public String solve() {
+        return "YES";
+    }
 }
