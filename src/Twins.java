@@ -7,4 +7,8 @@ public class Twins {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         in.close();
     }
+
+    private static int solve() {
+        return 0;
+    }
 }
