@@ -15,7 +15,7 @@ public class Twins {
         in.close();
     }
 
-    private static int solve() {
+    private static int solve(ArrayList<Integer> coinValues) {
         return 0;
     }
 }
