@@ -15,7 +15,7 @@ public class BitPlusPlus {
                     x--;
                 }
             }
-        } catch (IOException e) {
+        } catch (IOException ignored) {
 
         }
         System.out.println(x);
