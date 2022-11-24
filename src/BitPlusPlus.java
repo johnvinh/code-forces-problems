@@ -4,10 +4,20 @@ import java.io.InputStreamReader;
 
 public class BitPlusPlus {
     public static void main(String[] args) {
+        int x = 0;
         try (InputStreamReader is = new InputStreamReader(System.in); BufferedReader in = new BufferedReader(is)) {
-            
+            int n = Integer.parseInt(in.readLine());
+            for (int i = 0; i < n; i++) {
+                String line = in.readLine();
+                if (line.contains("++")) {
+                    x++;
+                } else if (line.contains("--")) {
+                    x--;
+                }
+            }
         } catch (IOException e) {
 
         }
+        System.out.println(x);
     }
 }
